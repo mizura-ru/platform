@@ -1,0 +1,11 @@
+header{
+    position: relative;
+    background-color: #fff;
+}
+
+header .header{
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}

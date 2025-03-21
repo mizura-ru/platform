@@ -1,0 +1,32 @@
+/* markdownStyles.css */
+.markdown-renderer {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .markdown-renderer h1,
+  .markdown-renderer h2,
+  .markdown-renderer h3 {
+    color: #333;
+  }
+  
+  .markdown-renderer p {
+    margin: 10px 0;
+  }
+  
+  .markdown-renderer code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .markdown-renderer pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+  }
