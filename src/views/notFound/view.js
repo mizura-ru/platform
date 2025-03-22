@@ -18,7 +18,6 @@ export default function E404View(){
                 <h1>404</h1>
                 <p>{pagename}</p>
                 <button onClick={()=> navigate("/")}>На главную</button>
-                <p>r59rzj7oc2feqdt4</p>
             </main>
         <Footer />
         </>

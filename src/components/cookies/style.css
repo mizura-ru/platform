@@ -27,7 +27,7 @@
 }
 .CookieConsent .content{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1900px;
     margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -41,7 +41,7 @@
     flex-direction: column;
 }
 .CookieConsent .content .clm .mini{
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 .CookieConsent .content .row{
     display: flex;

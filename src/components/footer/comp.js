@@ -10,7 +10,7 @@ const Footer = () =>{
     return(
         <footer>
             <div className="footer">
-                <p className="mini pdn4">{name} v{version}</p>
+                <p className="mini row wrap"><span>{name} v{version}</span> <span>О нас</span> <span>Политика конфиденциальности</span> <span>Правила использования</span> <span>Политика в отношении файлов cookie</span></p>
                 <div>
                 <div className="row">
                     <img src={cloudru} alt="cloud.ru" />
