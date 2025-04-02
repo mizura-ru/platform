@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import {Link} from "react-router-dom";
 import Header from "../../components/header/comp";
 import { useAppContext } from "../../Application";
 import './style.css';
@@ -7,7 +6,7 @@ import Footer from "../../components/footer/comp";
 
 
 export default function HomeView(){
-  const { pagename, setPagename } = useAppContext();
+  const { setPagename } = useAppContext();
     
   useEffect(() => {
       setPagename("Главная");
