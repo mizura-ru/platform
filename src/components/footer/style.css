@@ -1,11 +1,12 @@
 .footer{
     width: 100%;
-    max-width: 1900px;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     gap: 10px;
     flex-direction: column;
     opacity: 0.6;
+    min-height: 10vh;
 }
 .footer .row{
     display: flex;

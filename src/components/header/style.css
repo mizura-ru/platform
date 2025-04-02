@@ -1,11 +1,24 @@
 header{
     position: relative;
     background-color: #fff;
+    font-family: 'Raleway Bold';
+    font-size: 14px;
 }
 
 header .header{
-    padding: 10px 15px;
+    padding: 10px;
     width: 100%;
-    max-width: 1900px;
+    max-width: var(--max-width);
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+header .header a{
+    color: gray;
+}
+.logo{
+    max-height: 25px;
 }

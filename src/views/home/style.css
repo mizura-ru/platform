@@ -1,0 +1,53 @@
+.welcome{
+    background-color: var(--akcent);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Raleway Medium';
+}
+.welcome .content{
+    width: 100%;
+	max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 10px;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	gap: 10px;
+}
+.rowed{
+    width: 100%;
+}
+.lblborard button{
+    align-items: left;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    max-width: 200px;
+}
+
+.cartbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.cart{ 
+    flex-basis: 300px;
+    background-color: #fff;
+    padding: 20px;
+}
+.cartbar .cart{ 
+    
+    box-shadow: 0 0 10px 0 #00000005;
+    font-size: 14px;
+}
+.cartbar .cart .head{ 
+    margin-bottom: 40px;
+}
+
+.pay{
+    font-size: 1.3rem;
+    font-family: 'Raleway ExtraBold';
+}

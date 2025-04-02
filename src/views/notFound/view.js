@@ -14,7 +14,7 @@ export default function E404View(){
     return (
         <>
         <Header />
-            <main>
+            <main className="centered">
                 <h1>404</h1>
                 <p>{pagename}</p>
                 <button onClick={()=> navigate("/")}>На главную</button>

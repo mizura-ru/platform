@@ -179,8 +179,10 @@
 }
 
 :root{
-	--akcent: #2070ff;
-	--akcent-two: #a3c5ff;
+	--akcent: #8048f8;
+	--akcent-two: #c5aaff;
+
+	--max-width: 1400px;
 }
 
 
@@ -189,6 +191,8 @@
 	-ms-overflow-style: none;
 	scrollbar-width: none; 
 }
+
+
   
 html, body{
 	margin: 0px;
@@ -202,12 +206,12 @@ html, body{
 
 main{
     width: 100%;
-    max-width: 1900px;
+	max-width: var(--max-width);
     margin: 0 auto;
     padding: 10px;
-	min-height: 90vh;
+	min-height: 80vh;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 10px;
 }
 main article{
@@ -260,12 +264,30 @@ main section{
 	border-radius: 8px;
 	height: fit-content;
 }
-.mini{
+*.mini{
 	font-size: 0.6rem;
+	color: gray;
+	margin: 4px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.clm{
+	display: flex;
+	flex-direction: column;
+}
+.gap{
+	gap: 10px;
+}
+.gapx3{
+	gap: 30px;	
 }
 a{
 	text-decoration: none;
-	color: #2070ff;
+	color: var(--akcent);
+	cursor: not-allowed;
 }
 p.mini, h3{
 	margin: 0px;
@@ -273,37 +295,46 @@ p.mini, h3{
 h1{
 	margin: 4px 0px;
 }
+.gray{
+	color: gray;
+}
 
 button{
-	padding: 6px 8px;
-	border-radius: 4px;
-	border: 1px solid var(--akcent-two);
-	background-color: var(--akcent-two);
-	color: var(--akcent);
-	font-family: 'Raleway Medium';
+	padding: 6px 10px;
+	border: 1px solid var(--akcent);
+	background-color: var(--akcent);
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Raleway SemiBold';
 	display: flex;
 	flex-direction: row;
 	gap: 10px;
 	justify-content: center;
 	align-items: center;
+	cursor: not-allowed;
 }
-
-
-.cart{
-	display: flex;
-	align-items: center;
-	gap: 10px;
+button.black{
+	background-color: #000;
+	border: 1px solid #000;
+	color: #ffffff;
 }
-.cart .fa{
-	font-size: 1rem;
-	padding: 4px;
-	flex-basis: 15px;
+button .fa{
 	flex-grow: 1;
+	flex-basis: 20px;
 }
-.cart span{
-	flex-basis: 100%;
-	flex-grow: 2;
+button span{
+	flex-grow: 3;
 }
+.btw{
+	display: flex;
+	justify-content: space-between;
+}
+
 .wrap{
 	flex-wrap: wrap;
+}
+.centered{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
