@@ -338,3 +338,39 @@ button span{
 	align-items: center;
 	justify-content: center;
 }
+
+.welcome .contentd{
+	width: 100%;
+	max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 10px;
+	min-height: 10vh;
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	gap: 10px;
+}
+
+.maininfoandright{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+.maininfoandright .main{
+	flex-grow: 3;
+	flex-basis: 100%;
+	width: 100%;
+}
+.maininfoandright .panel{
+	flex-grow: 1;
+	width: 100%;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: sticky;
+	top: 10px;
+	height: fit-content;
+}

@@ -13,7 +13,10 @@ export const AppProvider = ({ children }) => {
   const [pagename, setPagename] = useState('Загрузка...');
   const [title, setTitle] = useState('MIZURA');
   const version = application.version;
-  const name = application.name;
+  const authorName = application.author.name;
+  const authoremail = application.author.email;
+  const appName = application.application.name;
+  const appDomain = application.application.url;
 
   useEffect(() => {
     document.title  = `${pagename} | MIZURA`;
@@ -29,7 +32,9 @@ export const AppProvider = ({ children }) => {
   }, [theme]);
 
   return (
-    <AppContext.Provider value={{ analytics, theme, toggleTheme, navigate, pagename, setPagename,version,name }}>
+    <AppContext.Provider value={{ analytics, theme, toggleTheme, navigate, pagename, setPagename,version,appName,
+      authoremail, authorName, appDomain
+     }}>
       {children}
       <CookieConsent/>
       <YandexMetrica />

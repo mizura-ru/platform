@@ -2,6 +2,14 @@
   "name": "mizura-ru",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "info@mizura.ru",
+    "name": "Александр Каурцев"
+  },
+  "application": {
+    "name": "МИЗУРА",
+    "url": "mizura.ru"
+  },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
