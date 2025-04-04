@@ -19,6 +19,6 @@ header .header{
 header .header a{
     color: gray;
 }
-.logo{
+a.logo, a.logo img{
     max-height: 25px;
 }

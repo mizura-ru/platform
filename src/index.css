@@ -204,6 +204,21 @@ html, body{
     flex-direction: column;
 }
 
+@keyframes onload {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main * {
+    animation: onload 0.7s forwards;
+}
+
 main{
     width: 100%;
 	max-width: var(--max-width);
@@ -214,6 +229,7 @@ main{
 	flex-direction: column;
 	gap: 10px;
 }
+
 main article{
 	display: flex;
 	flex-direction: column;

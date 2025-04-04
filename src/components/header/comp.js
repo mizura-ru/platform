@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <header>
                 <div className="header">
-                    <img className='logo' src={mizuralogo} alt='logo' />
+                    <Link className='logo' to="/"><img src={mizuralogo} alt='logo' /></Link>
                     <div className="row gapx3">
                         <Link>Программные решения</Link>
                         <Link>Тарифы</Link>
