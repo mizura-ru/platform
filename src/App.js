@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AppProvider } from './Application';
+import HomeView from './views/home/view';
+import MainView from './views/main/view';
+
+import E404View from './views/notFound/view';
+import PrivacyView from './views/privacy/view';
+import CookiesView from './views/cookies/view';
+import TermsView from './views/terms/view';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AppProvider>
+        <Routes>
+          <Route exact path='/' element={<HomeView />} />
+          <Route exact path='/main' element={<MainView />} />
+          <Route exact path='/privacy' element={<PrivacyView />} />
+          <Route exact path='/cookies' element={<CookiesView />} />
+          <Route exact path='/terms' element={<TermsView />} />
+          <Route path='*' status="404" element={<E404View />} />
+        </Routes>
+      </AppProvider> 
+   </Router>
   );
 }
 

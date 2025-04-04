@@ -1,13 +1,392 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+	font-family: 'Raleway Light';
+	src: url('./fonts/raleway_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_light.svg#raleway_light') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+	font-family: 'Raleway Black';
+	src: url('./fonts/raleway_black.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_black.svg#raleway_black') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Black Italic';
+	src: url('./fonts/raleway_black_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_black_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_black_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_black_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_black_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_black_italic.svg#raleway_black_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Bold';
+	src: url('./fonts/raleway_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_bold.svg#raleway_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Bold Italic';
+	src: url('./fonts/raleway_bold_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_bold_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_bold_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_bold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_bold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_bold_italic.svg#raleway_bold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway ExtraBold';
+	src: url('./fonts/raleway_extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_extrabold.svg#raleway_extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway ExtraBold Italic';
+	src: url('./fonts/raleway_extrabold_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_extrabold_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_extrabold_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_extrabold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_extrabold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_extrabold_italic.svg#raleway_extrabold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway ExtraLight';
+	src: url('./fonts/raleway_extralight.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_extralight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_extralight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_extralight.svg#raleway_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway ExtraLight Italic';
+	src: url('./fonts/raleway_extralight_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_extralight_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_extralight_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_extralight_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_extralight_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_extralight_italic.svg#raleway_extralight_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Italic';
+	src: url('./fonts/raleway_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_italic.svg#raleway_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Light Italic';
+	src: url('./fonts/raleway_light_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_light_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_light_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_light_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_light_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_light_italic.svg#raleway_light_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Medium';
+	src: url('./fonts/raleway_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_medium.svg#raleway_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Medium Italic';
+	src: url('./fonts/raleway_medium_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_medium_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_medium_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_medium_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_medium_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_medium_italic.svg#raleway_medium_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Regular';
+	src: url('./fonts/raleway_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_regular.svg#raleway_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway SemiBold';
+	src: url('./fonts/raleway_semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_semibold.svg#raleway_semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway SemiBold Italic';
+	src: url('./fonts/raleway_semibold_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_semibold_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_semibold_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_semibold_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_semibold_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_semibold_italic.svg#raleway_semibold_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Thin';
+	src: url('./fonts/raleway_thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_thin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_thin.svg#raleway_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Raleway Thin Italic';
+	src: url('./fonts/raleway_thin_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/raleway_thin_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/raleway_thin_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/raleway_thin_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/raleway_thin_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/raleway_thin_italic.svg#raleway_thin_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+:root{
+	--akcent: #8048f8;
+	--akcent-two: #c5aaff;
+
+	--max-width: 1400px;
+}
+
+
+*{
+	box-sizing: border-box;
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+}
+
+
+  
+html, body{
+	margin: 0px;
+	font-family: 'Raleway Medium';
+    background-color: #f2f4f8;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes onload {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main *, .welcome * {
+    animation: onload 0.7s forwards;
+}
+
+main{
+    width: 100%;
+	max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 10px;
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+main article{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+main article.leftBar{
+	flex-basis: 450px;
+	height: fit-content;
+}
+main article.leftBar nav{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+main article.leftBar nav a{
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2px;
+	font-size: 0.8rem;
+}
+main article.leftBar nav a .fa{
+	flex-basis: 24px;
+	font-size: 0.9rem;
+}
+
+main article.leftBar nav a:hover{
+	background-color: #f2f4f8;
+}
+main article.rightBar{
+	flex-basis: 600px;
+	height: fit-content;
+}
+
+main article .panel{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+main section{
+	background-color: #fff;
+	flex-basis: 100%;
+	padding: 10px;
+	border-radius: 8px;
+	height: fit-content;
+}
+*.mini{
+	font-size: 0.6rem;
+	color: gray;
+	margin: 4px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.clm{
+	display: flex;
+	flex-direction: column;
+}
+.gap{
+	gap: 10px;
+}
+.gapx3{
+	gap: 30px;	
+}
+a{
+	text-decoration: none;
+	color: var(--akcent);
+	cursor: not-allowed;
+}
+p.mini, h3{
+	margin: 0px;
+}
+h1{
+	margin: 4px 0px;
+}
+.gray{
+	color: gray;
+}
+
+button{
+	padding: 6px 10px;
+	border: 1px solid var(--akcent);
+	background-color: var(--akcent);
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Raleway SemiBold';
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	cursor: not-allowed;
+}
+button.black{
+	background-color: #000;
+	border: 1px solid #000;
+	color: #ffffff;
+}
+button .fa{
+	flex-grow: 1;
+	flex-basis: 20px;
+}
+button span{
+	flex-grow: 3;
+}
+.btw{
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+.centered{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome .contentd{
+	width: 100%;
+	max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 10px;
+	min-height: 10vh;
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	gap: 10px;
+}
+
+.maininfoandright{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+.maininfoandright .main{
+	flex-grow: 3;
+	flex-basis: 100%;
+	width: 100%;
+}
+.maininfoandright .panel{
+	flex-grow: 1;
+	width: 100%;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: sticky;
+	top: 10px;
+	height: fit-content;
 }

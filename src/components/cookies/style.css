@@ -1,0 +1,49 @@
+
+@keyframes cookieConsent {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+  }
+  
+
+.CookieConsent{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    opacity: 1;
+    left: 0px;
+    background-color: var(--akcent);
+    color: #fff;
+    animation: 0.7s cookieConsent ease-in-out;
+}
+.CookieConsent a{
+    font-family: 'Raleway Medium';
+    color: var(--color-header);
+}
+.CookieConsent .content{
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway Medium';
+}
+
+.CookieConsent .content .clm{
+    display: flex;
+    flex-direction: column;
+}
+.CookieConsent .content .clm .mini{
+    font-size: 0.8rem;
+}
+.CookieConsent .content .row{
+    display: flex;
+    gap: 10px;
+}
